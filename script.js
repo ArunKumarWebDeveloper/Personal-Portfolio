@@ -1,7 +1,6 @@
-  window.onload = function() {
-    window.location.hash = "#home";
-  };
+window.onload = function () {
+  window.scrollTo({ top: 0, behavior: "smooth" });
+};
+ 
 
-
-
-   
+  
