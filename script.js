@@ -1,6 +1,6 @@
-function onclicked(){
-    console.log("Button clicked!");
-}
+  window.onload = function() {
+    window.location.hash = "#home";
+  };
 
 
 
