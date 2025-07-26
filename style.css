@@ -192,7 +192,7 @@ body.dark-mode .dark-mode-toggle {
 body.dark-mode #home h1,
 body.dark-mode #home p {
   color: #ffffff;
-  background: rgba(0, 0, 0, 0.4);
+  /* background: rgba(0, 0, 0, 0.4); */
 } 
 
 /* ABOUT */
