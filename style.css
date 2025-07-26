@@ -88,7 +88,22 @@ a:hover {
   border-bottom: 1px solid rgba(0, 0, 0, 0.05);
   flex-wrap: wrap;
 }
+.navbar-light {
+  background-color: white;
+}
 
+.navbar-light a {
+  color: #000 !important;
+}
+
+/* Dark background = light text */
+.navbar-dark {
+  background-color: rgba(0, 0, 0, 0.7);
+}
+
+.navbar-dark a {
+  color: #fff !important;
+}
 /* Navbar List */
 nav ul {
   flex-wrap: wrap;
@@ -99,13 +114,17 @@ nav ul {
 
 /* Navbar Links */
 nav ul li a {
+    display: inline-block; 
   color:   #201f1f;
   font-weight: 500;
-  transition: color 0.3s ease;
+ transition: color 0.3s, border-bottom 0.3s;
 }
 
 nav ul li a:hover {
-  color:  #007bff;
+  transition: transform 0.3s ease;
+  color:  #0040ff;
+  border-bottom: 2px solid #007BFF;
+  transform: scale(1.1);
 }
 
 /* Navbar styling */
@@ -143,8 +162,12 @@ nav ul li a:hover {
   float: right;
 }
 
-#darkModeToggle  {
-  
+/* Basic Navbar Styling */
+
+
+
+#darkMode  {
+
   width: 30px;
   height: 30px;
   cursor: pointer;
@@ -283,7 +306,7 @@ body.dark-mode .btn-primary:hover {
   background-color: #64b5f6;
 }
 body {
-  transition: background-color 0.4s, color 0.4s;
+  transition: background-color 0s, color 0s;
 }
 
 body.dark-mode {
@@ -350,7 +373,7 @@ body.dark-mode .btn:hover {
 #home {
   margin: 0;
   padding: 0;
-  background-image: url('/Assets/1img.jpg');
+  background-image: url('/Assets/coding-man.jpg');
   background-size: cover;
   background-position: center;
   background-repeat: no-repeat;
@@ -370,7 +393,7 @@ body.dark-mode .btn:hover {
 #home h1 {
   padding: 10px 20px;
   font-size: 3rem;
-  color:  #ffffff;
+  color:  #201f1f;
   margin-bottom: 10px;
   border-radius: 8px;
 }
@@ -378,7 +401,7 @@ body.dark-mode .btn:hover {
 #home p {
   padding: 8px 16px;
   font-size: 1.2rem;
-  color: #ffffff;
+  color: #000000;
   margin-bottom: 0;
   border-radius: 8px;
 }
@@ -386,7 +409,25 @@ body.dark-mode .btn:hover {
 
 /* Optional: Image Hover Effect */
 .home-hero  {
+    background: auto rgba(0, 0, 0, 0.7);
+  backdrop-filter: blur(10px);
+  -webkit-backdrop-filter: blur(10px);
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  box-shadow: 0 3px 8px rgba(0, 0, 0, 0.05);
+  border-bottom: 1px solid rgba(0, 0, 0, 0.05);
+  flex-wrap: wrap;
+    background-color: auto #ffffff;
+  border-radius: 12px;
+  box-shadow: 10px 8px 24px rgba(92, 90, 90, 0.2);
+  overflow: hidden;
+  padding: 20px;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
   transition: transform 0.3s ease;
+
 }
 
 /* About Section Background */

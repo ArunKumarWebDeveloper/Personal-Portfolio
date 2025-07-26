@@ -1,33 +1,40 @@
 window.onload = function () {
   window.scrollTo({ top: 0, behavior: "smooth" });
 };
- 
-document.addEventListener("DOMContentLoaded", function () {
-  const scrollToTopButton = document.getElementById("scrollToTopButton");
 
-  scrollToTopButton.addEventListener("click", function () {
-    window.scrollTo({ top: 0, behavior: "smooth" });
-  });
+document.addEventListener("DOMContentLoaded", () => {
+  const toggleBtn = document.getElementById("darkMode"); // fixed ID
 
-  window.addEventListener("scroll", function () {
-    if (document.body.scrollTop > 20 || document.documentElement.scrollTop > 20) {
-      scrollToTopButton.style.display = "block";
+  // Apply dark mode from localStorage if saved
+  const darkMode = localStorage.getItem("darkMode");
+  if (darkMode === "enabled") {
+    document.body.classList.add("dark-mode");
+  }
+
+  // Add event listener to toggle dark mode
+  toggleBtn.addEventListener("click", () => {
+    document.body.classList.toggle("dark-mode");
+
+    if (document.body.classList.contains("dark-mode")) {
+      localStorage.setItem("darkMode", "enabled");
     } else {
-      scrollToTopButton.style.display = "none";
+      localStorage.setItem("darkMode", "disabled");
     }
   });
 });
 
-const toggleBtn = document.getElementById("darkModeToggle");
+document.addEventListener("DOMContentLoaded", () => {
+  const hamburger = document.getElementById("hamburger");
+  const navLinks = document.getElementById("navLinks");
 
-toggleBtn.addEventListener("click", () => {
-  document.body.classList.toggle("dark-mode");
+  hamburger.addEventListener("click", () => {
+    navLinks.classList.toggle("show");
+  });
 
-  if (document.body.classList.contains("dark-mode")) {
-    toggleBtn.src = "./Assets/sun.png"; // Switch to sun icon for light mode
-    toggleBtn.alt = "Switch to Light Mode";
-  } else {
-    toggleBtn.src = "./Assets/moon.png"; // Switch to moon icon for dark mode
-    toggleBtn.alt = "Switch to Dark Mode";
-  }
+  // Optional: close menu when a link is clicked (for mobile UX)
+  document.querySelectorAll(".nav-links a").forEach(link => {
+    link.addEventListener("click", () => {
+      navLinks.classList.remove("show");
+    });
+  });
 });
