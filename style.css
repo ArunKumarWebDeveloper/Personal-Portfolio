@@ -10,7 +10,8 @@ section,
 h1, h2, h3, p,
 .btn,
 nav,
-#next-button {
+#next-button 
+.resume-card{
   transition: all 0.4s ease-in-out;
 }
 
@@ -607,16 +608,16 @@ padding: 8px 16px;
   height: auto;
 }
 
-.resume-content {
+/* .resume-card {
   padding: 20px;
-}
+} */
 
-.resume-content h2 {
+.resume-card h2 {
   margin-bottom: 10px;
   color: #333;
 }
 
-.resume-content p {
+.resume-card p {
   margin-bottom: 20px;
   color: #555;
 }
@@ -632,6 +633,7 @@ padding: 8px 16px;
   background-color: #007BFF;
   color: white;
   padding: 10px 20px;
+  margin-bottom: 10px;
   text-decoration: none;
   border-radius: 8px;
   transition: background-color 0.3s ease, transform 0.3s ease;
@@ -641,6 +643,12 @@ padding: 8px 16px;
   background-color: #0056b3;
   transform: translateY(-2px);
 }
+
+.resume-card:hover{
+     transform: scale(1.05);
+  transition: transform 0.3s ease;
+}
+
 /* Certificates Section */
 #certificates {
   background-color:  #ffffff;
