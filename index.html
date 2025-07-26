@@ -5,12 +5,14 @@
   <meta name="viewport" content="width=device-width, initial-scale=1.0" />
   <title>Portfolio | Arun Kumar R</title>
   <link rel="stylesheet" href="style.css" />
-  <link rel="icon" href="/Assets/logo.png" type="image/x-icon" />
+  <link rel="icon" href="/Assets/letter-a.png" type="image/x-icon" />
 </head>
+
 <body>
-<nav class="custom-navbar" aria-label="Main Navigation">
+  <div class="main">
+    <nav class="custom-navbar" aria-label="Main Navigation">
   <div class="logo-container">
-    <img src="/Assets/logo.png" alt="Arun Kumar R Logo" class="logo" />
+    <img src="/Assets/letter-a-inside-a-circle.png" alt="Arun Kumar R Logo" class="logo" />
   </div>
   <ul class="nav-links" id="navLinks">
     <li><a href="#home">Home</a></li>
@@ -21,16 +23,18 @@
     <li><a href="#certificates">Certificates</a></li>
     <li><a href="#contact">Contact</a></li>
   </ul>
-</nav> 
-
+<button id="darkModeToggle"><img src="/Assets/dark-mode.png" alt="Toggle Dark Mode" /></button>
+</nav>
 
 <section id="home">
+  
   <div class="home-hero">
     
       <h1>ARUN KUMAR R</h1>
       <p>Web Developer | Programmer | Tech Enthusiast</p>
 
   </div>
+ 
 </section>
   <!-- About Section -->
   <section id="about" class="section2">
@@ -52,42 +56,26 @@
         <h3>Portfolio Website 1</h3>
         <img src="/Assets//6060376.jpg" alt="Project 1" class="project-image" loading="lazy" />
         <p>A personal portfolio website showcasing my skills and projects.</p>
-       <button class="btn-project" onclick="window.location.href='https://www.google.com'">
-          <strong>View Project</strong>
-        </button>
+       <a href="" target="_blank" rel="noopener noreferrer">View Project</a>
 
       </div>
       <div class="project-card">
         <h3>Portfolio Website 2</h3>
         <img src="/Assets/6060376.jpg" alt="Project 2" class="project-image" loading="lazy" />
         <p>A personal portfolio website showcasing my skills and projects.</p>
-    <button class="btn-project" onclick="window.location.href='https://github.com/ArunKumarWebDeveloper'">
-         <strong>View Project</strong>
-        </button>
+   <a href="" target="_blank" rel="noopener noreferrer">View Project</a>
       </div>
       <div class="project-card">
         <h3>Portfolio Website 3</h3>
         <img src="/Assets/6060376.jpg" alt="Project 3" class="project-image" loading="lazy" />
         <p>A personal portfolio website showcasing my skills and projects.</p>
-        <button class="btn-project" onclick="window.location.href='https://github.com/ArunKumarWebDeveloper'">
-         <strong>View Project</strong>
-        </button>
+       <a href="" target="_blank" rel="noopener noreferrer">View Project</a>
       </div>
       <div class="project-card">
         <h3>Portfolio Website 4</h3>
         <img src="/Assets/2517915.jpg" alt="Project 4" class="project-image" loading="lazy" />
         <p>A personal portfolio website showcasing my skills and projects.</p>
-       <button class="btn-project" onclick="window.location.href='https://github.com/ArunKumarWebDeveloper'">
-        <strong>View Project</strong>
-        </button>
-      </div>
-      <div class="project-card">
-        <h3>Portfolio Website 5</h3>
-        <img src="/Assets/pexels-luis-gomes-166706-546819.jpg" alt="Project 5" class="project-image" loading="lazy" />
-        <p>A personal portfolio website showcasing my skills and projects.</p>
-        <button class="btn-project" onclick="window.location.href='https://github.com/ArunKumarWebDeveloper'">
-          <strong>View Project</strong>
-        </button>
+       <a href="" target="_blank" rel="noopener noreferrer">View Project</a>
       </div>
 
       <!-- ...project2 to project5... -->
@@ -99,17 +87,17 @@
     <h2>Skills</h2>
     <div class="skills-container">
       <div class="skill">
-        <img src="/Assets/html-5_174854.png" alt="HTML" loading="lazy" />
+        <img src="/Assets/HTML (2).png" alt="HTML" loading="lazy" />
         <h3>HTML</h3>
         <p>HyperText Markup Language</p>
       </div>
       <div class="skill">
-        <img src="/Assets/css-3_732190.png" alt="CSS" loading="lazy" />
+        <img src="/Assets/icons8-css-512.png" alt="CSS" loading="lazy" />
         <h3>CSS</h3>
         <p>Flexbox, Grid, Bootstrap</p>
       </div>
       <div class="skill">
-        <img src="/Assets/js_5968292.png" alt="JavaScript" loading="lazy" />
+        <img src="/Assets/JavaScript (2).png" alt="JavaScript" loading="lazy" />
         <h3>JavaScript</h3>
         <p>Asynchronous Programming</p>
       </div>
@@ -117,13 +105,20 @@
   </section>
 
   <!-- Resume Section -->
-  <section id="resume" class="section5">
-    <h2>Resume</h2>
-    <div class="resume-container">
-      <a href="/Assets/White and Black Simple Resume.pdf" class="resume-btn">View Resume</a>
-      <a href="/Assets/White and Black Simple Resume.pdf" class="resume-btn">Download Resume</a>
+ <section id="resume" class="section5">
+  <h2>Resume</h2>
+  <div class="resume-card">
+    <img src="/Assets/aaa.jpg" alt="Resume Preview" class="resume-image" />
+    <div class="resume-content">
+      <p>Download or view my resume below.</p>
+      <div class="resume-actions">
+        <a href="/Assets/White and Black Simple Resume.pdf" target="_blank" class="resume-btn"> View Resume</a>
+        <a href="/Assets/White and Black Simple Resume.pdf" download class="resume-btn"> Download Resume</a>
+      </div>
     </div>
-  </section> 
+  </div>
+</section>
+
 
   <!-- Certificates Section -->
   <section id="certificates" class="section6">
@@ -164,26 +159,28 @@
   <p>If you'd like to get in touch, feel free to reach out via email, phone, or social media.</p>
 
   <div class="contact-info">
-    <p> <strong>Email:</strong>
-      <a href="mailto:arunlokesh78@gmail.com">arunlokesh78@gmail.com</a></p>
+  <div class="Contact"><strong>Email:</strong>
+      <a href="mailto:arunlokesh78@gmail.com">arunlokesh78@gmail.com</a>
+   </div>
 
-    <p><strong>Phone:</strong>
-      <a href="tel:+919019944841">+91 9019944841</a></p>
+      <div class="Contact"> <strong>Phone:</strong>
+      <a href="tel:+919019944841">+91 9019944841</a>
+      </div>
 
-    <p> <strong>LinkedIn:</strong>
+     <div class="Contact"><strong>LinkedIn:</strong>
       <a href="https://www.linkedin.com/in/arun-kumar-r-920841235" target="_blank">
         linkedin.com/in/arun-kumar-r
-      </a>
-    </p>
+      </a></div>
+  
 
-    <p> <strong>GitHub:</strong>
+    <div class="Contact"><strong>GitHub:</strong>
       <a href="https://github.com/ArunKumarWebDeveloper" target="_blank">
         github.com/ArunKumarWebDeveloper
-      </a>
-    </p>
+      </a></div>
+
   </div>
 </section>
-
+ </div>
 
   <!-- Footer -->
   <footer class="footer">
