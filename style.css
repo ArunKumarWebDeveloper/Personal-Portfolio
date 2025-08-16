@@ -124,7 +124,6 @@ nav ul li a:hover {
   transition: transform 0.3s ease;
   color:  #0040ff;
   border-bottom: 2px solid #007BFF;
-  transform: scale(1.1);
 }
 
 /* Navbar styling */
@@ -373,7 +372,7 @@ body.dark-mode .btn:hover {
 #home {
   margin: 0;
   padding: 0;
-  background-image: url('/Assets/coding-man.jpg');
+  background-image: url('./Assets/coding-man.jpg');
   background-size: cover;
   background-position: center;
   background-repeat: no-repeat;
@@ -393,7 +392,7 @@ body.dark-mode .btn:hover {
 #home h1 {
   padding: 10px 20px;
   font-size: 3rem;
-  color:  #201f1f;
+  color: auto #f8f6f6;
   margin-bottom: 10px;
   border-radius: 8px;
 }
@@ -401,7 +400,7 @@ body.dark-mode .btn:hover {
 #home p {
   padding: 8px 16px;
   font-size: 1.2rem;
-  color: #000000;
+  color:auto #fbfbfb;
   margin-bottom: 0;
   border-radius: 8px;
 }
@@ -437,10 +436,11 @@ body.dark-mode .btn:hover {
 }
 
 #about{
-  background-image: url('/Assets/about-bg.jpg'); /* ← change to your image path */
+  background-image: url('./Assets/about-bg.jpg'); /* ← change to your image path */
   background-size: cover;
   background-position: center;
   background-repeat: no-repeat;
+  background-attachment: scroll;
   padding: 60px 20px;
   text-align: center;
   flex-wrap: wrap;
